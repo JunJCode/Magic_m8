@@ -1,0 +1,26 @@
+h1 {
+    color: red;
+}
+.magicEightBall {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display {
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.triangle {
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+}
