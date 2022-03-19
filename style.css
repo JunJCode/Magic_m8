@@ -41,8 +41,8 @@ ul {
     align-items: center;
 }
 .magicEightBall {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     background-color: black;
     border-radius: 50%;
     display: flex;
@@ -50,8 +50,8 @@ ul {
     align-items: center;
 }
 .display {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     background-color: orange;
     border-radius: 50%;
     display: flex;
@@ -59,10 +59,30 @@ ul {
     align-items: center;
 }
 .triangle {
-    width: 0px;
-    height: 0px;
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-    border-top: 60px solid #f00;
-    /*background-color: pink;*/
+    /* width: 200px;
+    height: 50px;
+    background-color: white;
+    */
+    width: 150px;
+    height: 230px;
+    background-image:linear-gradient(to top right, transparent 50%, rgb(38, 89, 184) 0),
+          linear-gradient(to bottom right, rgb(38, 89, 184) 50%, transparent 0);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position:left, right;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+    /* text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+#textDisplay {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+    color: white;
+    margin: 50% 0% 0% 13%; 
+    padding: 0px;
+    width: 70%;
 }
