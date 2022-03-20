@@ -63,6 +63,7 @@ ul {
     height: 50px;
     background-color: white;
     */
+    display: none;
     width: 150px;
     height: 230px;
     background-image:linear-gradient(to top right, transparent 50%, rgb(38, 89, 184) 0),
