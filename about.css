@@ -40,6 +40,15 @@ ul {
     height: 200px;
 }
 .profilePhoto {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.profilePhoto:hover {
+	-webkit-filter: blur(0);
+	filter: blur(0);
 }

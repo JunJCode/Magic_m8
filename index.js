@@ -27,23 +27,38 @@ function random_answer(){
 const ballClick = document.querySelector(".magicEightBall");
 const textDisplay = document.getElementById('textDisplay');
 
-ballClick.addEventListener("click", function(){
-    textDisplay.innerHTML = random_answer(answers);
-    console.log(random_answer(answers));
-});
+// ballClick.addEventListener("click", function(){
+//     setTimeout(function() {
+//     textDisplay.innerHTML = random_answer(answers);
+//     console.log(random_answer(answers));}, 600);
+// });
 //Below will name the varable associated to the tri element in the index.html
+
 const ShowHidetriangle = document.getElementById('tri');
 
+
 //Below will set up another event listen shich will wait for an event and then run the function changing the style.css display of the html elemet tri.
-ballClick.addEventListener('click', function() {
+ballClick.addEventListener("click", function() {
+                ShowHidetriangle.classList.add("elementToFadeInAndOut");
+                textDisplay.innerHTML = random_answer(answers);
+                setTimeout(function(){ShowHidetriangle.classList.remove("elementToFadeInAndOut");}, 4000)
+                
+
+//The Code below makes the triangle display 400 miliseconds after it's click.
+    // setTimeout(function() {
+    //     ShowHidetriangle.style.display = "block";}, 400);
+    //ShowHidetriangle.fadeIn(100);
+
     //tri.style.backgroundColor="green";
      /* ShowHidetriangle.style.display = "none";
      ShowHidetriangle.style.display = "block"; */
-     if (ShowHidetriangle.style.display === "none") {
+     //////////
+
+   /*   if (ShowHidetriangle.style.display === "none") {
         ShowHidetriangle.style.display = "block";
     } else {
         ShowHidetriangle.style.display = "none";
-    }
+    } */
 });
 
 
