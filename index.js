@@ -29,6 +29,7 @@ const textDisplay = document.getElementById('textDisplay');
 
 ballClick.addEventListener("click", function(){
     textDisplay.innerHTML = random_answer(answers);
+    console.log(random_answer(answers));
 });
 //Below will name the varable associated to the tri element in the index.html
 const ShowHidetriangle = document.getElementById('tri');
@@ -36,15 +37,14 @@ const ShowHidetriangle = document.getElementById('tri');
 //Below will set up another event listen shich will wait for an event and then run the function changing the style.css display of the html elemet tri.
 ballClick.addEventListener('click', function() {
     //tri.style.backgroundColor="green";
-    
-    if (tri.style.display === "none") {
-        tri.style.display = "block";
+     /* ShowHidetriangle.style.display = "none";
+     ShowHidetriangle.style.display = "block"; */
+     if (ShowHidetriangle.style.display === "none") {
+        ShowHidetriangle.style.display = "block";
     } else {
-        tri.style.display = "none";
+        ShowHidetriangle.style.display = "none";
     }
 });
-
-
 
 
 //This code will display the randomAnswers variable on a click
