@@ -37,7 +37,8 @@ const textDisplay = document.getElementById('textDisplay');
 const ShowHidetriangle = document.getElementById('tri');
 
 
-//Below will set up another event listen shich will wait for an event and then run the function changing the style.css display of the html elemet tri.
+//Below will set up another event listen which will wait for an event and then run the function that will add a class to the tri ID in the html(triangle). This class will then use CSS to adjust the opacity of the traingle.
+//The next line will run the random_answers function with a parameter of answers and then input it into the textDisplay variable with is linked to the ID textDisplay.
 ballClick.addEventListener("click", function() {
                 ShowHidetriangle.classList.add("elementToFadeInAndOut");
                 textDisplay.innerHTML = random_answer(answers);
