@@ -27,21 +27,41 @@ h1 {
     color: red;
     text-decoration: underline;
 }
-li {
-    list-style: none;
-    display: inline-block;
-}
-ul {
-    margin: 0px;
-}
-.navbar a {
-    color: white;
+
+  .navbar a {
+    color: rgba(255, 255, 255, 0.884);
     text-decoration: none;
-    font-size: 16px;
-    text-shadow: 1px 1px 2px black;
-    font-size: 32px;
-    margin: 0px 40px 0px 0px;
-}
+    text-shadow: 2px 2px 4px rgb(195, 178, 178);
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    margin: 0px 90px 0px 80px;
+  }
+  
+  .navbar {
+    height: 40px;
+    margin: 0px;
+    background: rgb(30, 64, 240);
+    background: radial-gradient(
+      circle,
+      rgb(8, 59, 151) 0%,
+      rgba(249, 11, 11) 100%
+    );
+    border-radius: 50px;
+    box-shadow: 0px 0px 35px 17px #0f1d87;
+  }
+
+  nav ul li a:hover {
+    color: rgb(104, 144, 236);
+  }
+  
+  ul {
+    margin: 0px;
+  } 
+  li {
+      list-style: none;
+      display: inline-block;
+  } 
+
 .main-container {
     display: flex;
     justify-content: center;
@@ -78,7 +98,7 @@ ul {
 .display {
     width: 200px;
     height: 200px;
-    background-color: orange;
+    background-color: rgb(249, 11, 11);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -92,8 +112,8 @@ ul {
    /* display: none; */
     width: 150px;
     height: 230px;
-    background-image:linear-gradient(to top right, transparent 50%, rgb(38, 89, 184) 0),
-          linear-gradient(to bottom right, rgb(38, 89, 184) 50%, transparent 0);
+    background-image:linear-gradient(to top right, transparent 50%, rgb(8, 58, 151) 0),
+          linear-gradient(to bottom right, rgb(8, 58, 151) 50%, transparent 0);
     background-size: 50% 50%;
     background-repeat: no-repeat;
     background-position:left, right;
@@ -120,6 +140,7 @@ ul {
     justify-content: center;
     align-items: center;*/
     color: white;
+    text-shadow: 3px 3px 5px rgb(195, 178, 178);
     margin: 50% 0% 0% 13%; 
     padding: 0px;
     width: 70%;
