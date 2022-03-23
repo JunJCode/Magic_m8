@@ -6,7 +6,7 @@ header {
     background-color: black;
     height: 40px;
 }
-li {
+/*li {
     list-style: none;
     display: inline-block;
 }
@@ -29,7 +29,42 @@ main {
     text-shadow: 1px 1px 2px black;
     font-size: 32px;
     margin: 0px 40px 0px 0px;
-}
+} */
+
+.navbar a {
+    color: rgba(255, 255, 255, 0.884);
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgb(195, 178, 178);
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    margin: 0px 90px 0px 80px;
+  }
+  
+  .navbar {
+    height: 40px;
+    margin: 0px;
+    background: rgb(30, 64, 240);
+    background: radial-gradient(
+      circle,
+      rgb(8, 59, 151) 0%,
+      rgba(249, 11, 11) 100%
+    );
+    border-radius: 50px;
+    box-shadow: 0px 0px 35px 17px #0f1d87;
+  }
+
+  nav ul li a:hover {
+    color: rgb(104, 144, 236);
+  }
+  
+  ul {
+    margin: 0px;
+  } 
+  li {
+      list-style: none;
+      display: inline-block;
+  } 
+  
 .profileM8 {
     display: flex;
     margin: 0;
