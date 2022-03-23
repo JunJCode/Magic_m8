@@ -12,7 +12,7 @@ body {
 }
 main {
     margin-top: 0px;
-    background-image: url("https://cdn.dribbble.com/users/2081/screenshots/6817224/zoomtrispiral.gif");
+    background-image: url("assets/zoomtrispiral.gif");
     background-size: cover;
     background-position: center;
     width: 100%;
