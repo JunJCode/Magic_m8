@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Permanent+Marker&display=swap');
+
 body {
     text-align: center;
     margin: 0px;
@@ -5,6 +7,15 @@ body {
 header {
     background-color: black;
     height: 40px;
+}
+
+main {
+    background: rgb(12,20,59);
+    background: linear-gradient(180deg, rgba(12,20,59,1) 0%, rgba(12,20,59,1) 10%, rgba(2,83,184,1) 100%);
+    margin: 0px;
+    height: 100vh;
+    color: white;
+    font-family: 'Archivo Narrow';
 }
 /*li {
     list-style: none;
@@ -38,6 +49,11 @@ main {
     font-size: 30px;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     margin: 0px 90px 0px 80px;
+  }
+h1 {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 30px;
   }
   
   .navbar {

@@ -44,6 +44,9 @@ ballClick.addEventListener("click", function() {
                 textDisplay.innerHTML = random_answer(answers);
                 setTimeout(function(){ShowHidetriangle.classList.remove("elementToFadeInAndOut");}, 4000)
                 
+});
+//////////////////////////////////////////////////////////////////////////////////////////
+
 
 //The Code below makes the triangle display 400 miliseconds after it's click.
     // setTimeout(function() {
@@ -59,8 +62,9 @@ ballClick.addEventListener("click", function() {
         ShowHidetriangle.style.display = "block";
     } else {
         ShowHidetriangle.style.display = "none";
-    } */
-});
+    } 
+});*/
+
 
 
 //This code will display the randomAnswers variable on a click
