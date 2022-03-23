@@ -17,30 +17,6 @@ main {
     color: white;
     font-family: 'Archivo Narrow';
 }
-/*li {
-    list-style: none;
-    display: inline-block;
-}
-ul {
-    margin: 0px;
-}
-main {
-    margin-top: 0px;
-    background-image: url("https://i.pinimg.com/originals/4e/0a/d3/4e0ad318b0c7d496f8e19376165fa01a.gif");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-}
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    text-shadow: 1px 1px 2px black;
-    font-size: 32px;
-    margin: 0px 40px 0px 0px;
-} */
 
 .navbar a {
     color: rgba(255, 255, 255, 0.884);

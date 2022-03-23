@@ -72,7 +72,10 @@ h1 {
     margin-top: 10%;
     width: 400px;
     height: 400px;
-    background: linear-gradient(#2d2d2e 0%, #000000 10%, #000000 50%, #000000 100%);
+    background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+    /* background: radial-gradient(circle at 65% 15%, white 1px, aqua 3%, darkblue 60%, aqua 100%); */
+    /* background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%); */
+    /* background: linear-gradient(#2d2d2e 0%, #000000 10%, #000000 50%, #000000 100%); */
     /* background-color: black; */
     border-radius: 50%;
     display: flex;
