@@ -8,6 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="assets/8ball_icon.ico">
         <link rel="stylesheet" href="style.css">
+        <audio id="myAudio">
+            <source src="assets/shake3.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
     </head>
     <body>
         <header>
@@ -29,6 +33,8 @@
                 </div>
             </div>
         </div>
+        <button onclick="playAudio()" type="button">Play Audio</button>
+        <button onclick="pauseAudio()" type="button">Pause Audio</button> 
         </main>
         <script src="index.js" async defer></script>
     </body>
