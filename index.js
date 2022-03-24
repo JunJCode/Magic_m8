@@ -1,17 +1,17 @@
 
 //This is the intial array with all the 20 answers
 let answers = ["It is certain.", "It is decidedly.", "Yes Definitely!", "You may rely on it!", "As I see it, yes!", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes.", "Reply hazy.", "Try again.", "Ask again later.","Better not tell you now.","Cannot predict now.", "Concentrate and ask again.", "Don't count on it!", "My reply is no!", "My sources say no.", "Outlook not so good.", "Very doubtful."];
-
 //Declartion of a function and passing in the array of answers
 //return is used to return a value and save it to be called later
-function random_answer(){ 
-    return answers[Math.floor(Math.random()*answers.length)];}
+let random_answer = () => answers[Math.floor(Math.random()*answers.length)];
+// below is the Traditional function
+// function random_answer(){ 
+//     return answers[Math.floor(Math.random()*answers.length)];}
 //The code inside [] above will return a number between 0 - 20
 //The Math.floor() function returns the largest integer less than or equal to a given number.
 //The Math.random() function returns a number between 0-1
 //The Math.random() number is then * by the answers.length which is the array
 //console.log(random_answer(answers));
-
 
 // Below the variable random_answer has been created to save the results of calling the function random_answer and passing in the array answers
 //let randomAnswer = (random_answer(answers));
@@ -35,17 +35,22 @@ const textDisplay = document.getElementById('textDisplay');
 //Below will name the varable associated to the tri element in the index.html
 
 const ShowHidetriangle = document.getElementById('tri');
-const x = document.getElementById("myAudio"); 
+const audio = document.getElementById("myAudio"); 
 
+
+//The first line defines a 
 //Below will set up another event listen which will wait for an event and then run the function that will add a class to the tri ID in the html(triangle). This class will then use CSS to adjust the opacity of the traingle.
 //The next line will run the random_answers function with a parameter of answers and then input it into the textDisplay variable with is linked to the ID textDisplay.
+//Then the next line uses a timer to remove the previous applied class after 4000 milliseconds.
+
+
 ballClick.addEventListener("click", function() {
-                function playAudio() {x.play();};
-                playAudio(x);
+                let playAudio = () => audio.play();
+                // function playAudio() {audio.play();};
+                playAudio(audio);
                 ShowHidetriangle.classList.add("elementToFadeInAndOut");
                 textDisplay.innerHTML = random_answer(answers);
                 setTimeout(function(){ShowHidetriangle.classList.remove("elementToFadeInAndOut");}, 4000)
-                
 });
 //////////////////////////////////////////////////////////////////////////////////////////
 
