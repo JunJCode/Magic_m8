@@ -35,11 +35,13 @@ const textDisplay = document.getElementById('textDisplay');
 //Below will name the varable associated to the tri element in the index.html
 
 const ShowHidetriangle = document.getElementById('tri');
-
+const x = document.getElementById("myAudio"); 
 
 //Below will set up another event listen which will wait for an event and then run the function that will add a class to the tri ID in the html(triangle). This class will then use CSS to adjust the opacity of the traingle.
 //The next line will run the random_answers function with a parameter of answers and then input it into the textDisplay variable with is linked to the ID textDisplay.
 ballClick.addEventListener("click", function() {
+                function playAudio() {x.play();};
+                playAudio(x);
                 ShowHidetriangle.classList.add("elementToFadeInAndOut");
                 textDisplay.innerHTML = random_answer(answers);
                 setTimeout(function(){ShowHidetriangle.classList.remove("elementToFadeInAndOut");}, 4000)
@@ -132,12 +134,12 @@ eightBall.addEventListener('click', function() {
 //let answers = amswers[Math.floor(Math.random()*answers.length)];
 //console.log(answers)
 
-var x = document.getElementById("myAudio"); 
+// var x = document.getElementById("myAudio"); 
 
-function playAudio() { 
-  x.play(); 
-} 
+// function playAudio() { 
+//   x.play(); 
+// } 
 
-function pauseAudio() { 
-  x.pause(); 
-} 
+// function pauseAudio() { 
+//   x.pause(); 
+// } 
