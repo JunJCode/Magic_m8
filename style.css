@@ -1,4 +1,4 @@
-/* This basically tells different browsers to not highlight text when selected. */
+
 body {
     margin: 0px;
     -webkit-touch-callout: none; /* iOS Safari */
@@ -29,9 +29,7 @@ h1 {
     font-size: 40px;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     margin: 0px 0px 0px 0px;
-    text-shadow: 1px 1px 2px black;
 }
-
   .navbar a {
     color: rgba(255, 255, 255, 0.884);
     text-decoration: none;
@@ -86,9 +84,6 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-/* Here is the shake animation, it functions by moving the .magicEightBall container over various directions (pixels) and rotations.
- This animation is only played when the .magicEightBall is active (when you click the ball). */
-
 .magicEightBall:active {
     animation: shake 0.2s;
     animation-iteration-count: 1;
@@ -157,3 +152,57 @@ h1 {
     padding: 0px;
     width: 70%;
 }
+
+.profile {
+  width: 300px;
+}
+
+
+/* #arrowAnim {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  width: 6vw;
+  height: 6vw;
+  border: 1.5vw solid;
+  border-color: rgb(236, 74, 74) transparent transparent rgb(228, 71, 71);
+  transform: rotate(45deg);
+}
+
+
+.arrowSliding {
+  position: absolute;
+  -webkit-animation: slide 4s linear infinite; 
+          animation: slide 4s linear infinite;
+}
+
+.delay1 {
+  -webkit-animation-delay: 1s; 
+    animation-delay: 1s;
+}
+.delay2 {
+  -webkit-animation-delay: 2s; 
+    animation-delay: 2s;
+}
+.delay3 {
+  -webkit-animation-delay: 3s; 
+    animation-delay: 3s;
+}
+
+@-webkit-keyframes slide {
+    0% { opacity:0; transform: translateY(5vw); }	
+   20% { opacity:1; transform: translateY(1vw); }	
+   80% { opacity:1; transform: translateY(-1vw); }	
+  100% { opacity:0; transform: translateY(-5vw); }	
+}
+@keyframes slide {
+    0% { opacity:0; transform: translateY(5vw); }	
+   20% { opacity:1; transform: translateY(1vw); }	
+   80% { opacity:1; transform: translateY(-1vw); }	
+  100% { opacity:0; transform: translateY(-5vw); }	
+} */
