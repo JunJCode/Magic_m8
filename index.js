@@ -24,8 +24,8 @@ let random_answer = () => answers[Math.floor(Math.random()*answers.length)];
 //This will select the textDisplay ID within the HTML Document and then display the variable randomAnswer
 //document.getElementById('textDisplay').innerHTML = randomAnswer;
 
-const ballClick = document.querySelector(".magicEightBall");
-const textDisplay = document.getElementById('textDisplay');
+const ballClick = document.querySelector(".magic-eight-ball");
+const textDisplay = document.getElementById('text-display');
 
 // ballClick.addEventListener("click", function(){
 //     setTimeout(function() {
@@ -34,7 +34,7 @@ const textDisplay = document.getElementById('textDisplay');
 // });
 //Below will name the varable associated to the tri element in the index.html
 
-const ShowHidetriangle = document.getElementById('tri');
+const ShowHidetriangle = document.getElementById('triangle');
 const audio = document.getElementById("myAudio"); 
 
 
@@ -44,13 +44,13 @@ const audio = document.getElementById("myAudio");
 //Then the next line uses a timer to remove the previous applied class after 4000 milliseconds.
 
 
-ballClick.addEventListener("click", function() {
+ballClick.addEventListener("click", () => {
                 let playAudio = () => audio.play();
                 // function playAudio() {audio.play();};
                 playAudio(audio);
                 ShowHidetriangle.classList.add("elementToFadeInAndOut");
                 textDisplay.innerHTML = random_answer(answers);
-                setTimeout(function(){ShowHidetriangle.classList.remove("elementToFadeInAndOut");}, 4000)
+                setTimeout(() => {ShowHidetriangle.classList.remove("elementToFadeInAndOut");}, 4000)
 });
 //////////////////////////////////////////////////////////////////////////////////////////
 
