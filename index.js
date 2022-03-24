@@ -131,3 +131,13 @@ eightBall.addEventListener('click', function() {
 
 //let answers = amswers[Math.floor(Math.random()*answers.length)];
 //console.log(answers)
+
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
