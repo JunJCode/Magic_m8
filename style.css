@@ -24,8 +24,11 @@ header {
     height: 40px;
 }
 h1 {
-    color: red;
+    color: white;
     text-decoration: underline;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    margin: 0px 0px 0px 0px;
 }
 
   .navbar a {
