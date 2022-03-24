@@ -25,10 +25,10 @@ header {
 }
 h1 {
     color: white;
-    text-decoration: underline;
     font-size: 40px;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     margin: 0px 0px 0px 0px;
+    padding-top: 3%;
 }
 .navbar a {
     color: rgba(255, 255, 255, 0.884);
@@ -66,7 +66,7 @@ li {
     align-items: center;
 }
 .magic-eight-ball {
-    margin-top: 15%;
+    margin-top: 8%;
     width: 400px;
     height: 400px;
     background: radial-gradient(circle at 100px 100px, #5cabff, #000);
